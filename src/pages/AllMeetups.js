@@ -7,7 +7,7 @@ export const AllMeetupsPage = () => {
   const [loadedMeetups, setLoadedMeetups] = useState([]);
 
   useEffect(() => {
-    fetch('https://react-getting-started-7afcc-default-rtdb.firebaseio.com/meetups.json').then(response => {
+    fetch('https://react-meetup-app-4e1f1-default-rtdb.firebaseio.com/meetups.json').then(response => {
       return response.json();
     }).then(data => {
       const meetups = [];
